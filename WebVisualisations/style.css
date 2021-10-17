@@ -1,26 +1,8 @@
-.box {
-  min-height: 50px;
-  padding: 5px;
-  margin: 5px;
-  font-weight: 800;
-  color: #fff;
-}
 
-.skyblue {
-  background: deepskyblue;
-}
-
-.purple {
-  background: rebeccapurple;
-}
-
-.red {
-  background: indianred;
-}
-/* Giving our navbar some padding and a background color */
+/* Giving our navbar some padding and a background color */ */
 .navbar {
   padding: 10px;
-  background: #5191fd;
+  background: #3bf841;
 }
 
 /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
@@ -34,7 +16,8 @@
   border-radius: 3px;
 }
 
-/* Getting rid of the default link styles here */
+
+/* Getting rid of the default link styles here */ */
 .navbar li a {
   color: #000;
   text-decoration: none;
@@ -59,4 +42,7 @@
   margin-top: 50px;
   margin-right: 100px;
   margin-left: 100px;
+}
+img {
+  width: 100%;
 }
