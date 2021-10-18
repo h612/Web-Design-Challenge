@@ -7,15 +7,20 @@
   
   <body>
     <div class="container">
-      <nav class="navbar navbar-default">
-        <li class="dropdown show">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-target="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Latitude</a>
-            <ul class="dropdown-menu show" id="dropdown-menu">
-            
-                <li> <a class=" dropdown-item" data-toggle="dropdown" href="#">Plots</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav dropdown-content">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a> 
                   <ul class="dropdown-menu" id="dropdown-menu">
-                     <li>
-                      <a class="dropdown-item" href="summary.html">Max Temperature</a>
+                     <li >
+                      <a class="dropdown-item" href="maxTemp.html">Max Temperature</a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="humidity.html">Humidity</a>
@@ -30,16 +35,15 @@
                 </li>
          
           
-            <li>
-              <a href="#">Comparison</a>
+            <li class="nav-item">
+              <a class="nav-link" href="summary.html">Comparison</a>
             </li>
-            <li>
-              <a href="data.html">Data</a>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
             </li>
           </ul>
-        </li>
+        </div>
       </nav>
-      
     
     <div class="container">
       <!--Normally these medium columns go full wide on small screen sizes-->

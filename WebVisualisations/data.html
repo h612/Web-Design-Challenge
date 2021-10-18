@@ -17,44 +17,48 @@
   <meta charset="UTF-8">
   <title>Data Table</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>  
    
 <body>
-		<nav class="navbar navbar-default">
-				<div class="container-fluid">
-
-				  <div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					  <span class="sr-only">Toggle navigation</span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="Landing.html">Latitude</a>
-				  </div>
-			  
-
-				  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					
-						<ul class="nav navbar-nav navbar-right">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-								<li class="dropdown"></li>
-								<li><a href="Comparisons.html">Comparisons</a></li>
-							  <li><a href="Data.html">Data</a></li>
-								<ul class="dropdown-menu">
-								  <li><a href="Max Temp.html">Max Temperature</a></li>
-								  <li><a href="Humidity.html">Humidity</a></li>
-								  <li><a href="Cloudiness.html">Cloudiness</a></li>
-								  <li role="separator" class="divider"></li>
-								  <li><a href="Wind Speed.html">Wind Speed</a></li>
-					  </li>
-					</ul>
-				  </div>
-				</div>
-			  </nav>
-        
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav dropdown-content">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a> 
+              <ul class="dropdown-menu" id="dropdown-menu">
+                 <li >
+                  <a class="dropdown-item" href="maxTemp.html">Max Temperature</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="windspeed.html">Windspeed</a>
+                </li>
+              </ul>
+            </li>
+     
+      
+        <li class="nav-item">
+          <a class="nav-link" href="summary.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 	    <div class="content">
         	<div class="container-fluid">
                 <div class="row">
@@ -149,17 +153,10 @@
   
   
   
-  jquery.csvToTable.js
-  <div id="CSVTable"></div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="//jquerycsvtotable.googlecode.com/files/jquery.CSVToTable.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <script>
-  $(function() {
-    $('#CSVTable').CSVToTable('cities.csv');
-  });
-  </script>
-  
 </body>
 
 </html>

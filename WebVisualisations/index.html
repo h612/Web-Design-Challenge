@@ -7,37 +7,42 @@
 
 <body>
   <div class="container">
-    <nav class="navbar navbar-default">
-      <li class="dropdown show">
-        <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-target="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Latitude</a>
-          <ul class="dropdown-menu show" id="dropdown-menu">
-          
-              <li class="nav-item dropdown" style="cursor:pointer">
-                <a data-toggle="dropdown"  class="droptown-toggle" href="#">Plot<span class="caret"></span></a>
-              
-                <div class="dropdown-menu">
-                  
-                    <a class="dropdown-item" href="summary.html">Max Temperature</a>
-                                   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+      <a class="navbar-brand" href="index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav dropdown-content">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a> 
+                <ul class="dropdown-menu" id="dropdown-menu">
+                   <li >
+                    <a class="dropdown-item" href="maxTemp.html">Max Temperature</a>
+                  </li>
+                  <li>
                     <a class="dropdown-item" href="humidity.html">Humidity</a>
-                 
+                  </li>
+                  <li>
                     <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                
+                  </li>
+                  <li>
                     <a class="dropdown-item" href="windspeed.html">Windspeed</a>
-                
-                </div>
+                  </li>
+                </ul>
               </li>
        
         
-                <li>
-                  <a href="#">Comparison</a>
-                </li>
-                <li>
-                  <a href="data.html">Data</a>
-                </li>
+          <li class="nav-item">
+            <a class="nav-link" href="maxTemp.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
         </ul>
-      </li>
-     
+      </div>
     </nav> </div>
     <header class="header">
       <h1>Welcome</h1>
@@ -76,7 +81,7 @@
     <!--Normally these medium columns go full wide on small screen sizes-->
     <div class="row">
       <div class="col-sm-12 col-md-6">
-        <a href="summary.html"><img class="img-responsive" src="Resources/assets/images/Fig1.png" alt="Image"></a>
+        <a href="maxTemp.html"><img class="img-responsive" src="Resources/assets/images/Fig1.png" alt="Image"></a>
       </div>
       <div class="col-sm-12 col-md-6">
         <a href="humidity.html"><img class="img-responsive" src="Resources/assets/images/Fig2.png" alt="Image"></a>
