@@ -10,8 +10,8 @@
 .navbar li {
   display: inline-block;
   padding: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   cursor: pointer;
   background: rgb(250, 238, 7);
   border-radius: 3px;
